@@ -8,6 +8,8 @@
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Anmiton Aos Css Fil -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1829,7 +1831,7 @@
 			<p>قال تعالى:"إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا"</p>
 		</div>
 		<div class="container">
-			<form>
+			<form data-aos="fade-left">
 				<div>
 					<input class="my-input" type="text" name="Name" id="name" placeholder="الإسم الكامل" required>
 					<i class="fa-solid fa-user"></i>
@@ -1843,8 +1845,8 @@
 					<button type="submit" class="btn">إرسال</button>
 					<i class="fa-solid fa-paper-plane"></i>
 				</div>
-			</form>
-			<div class="socialmedia">
+			</form >
+			<div class="socialmedia" data-aos="fade-right">
 				<h2>مواقع التواصل الاجتماعي</h2>
 				<div class="links">
 					<a target="_blank" href="#">instagram <i class="fa-brands fa-instagram"></i></a>
@@ -1863,14 +1865,14 @@
 			<a href="#landing">وَذَكَرَ</a>
 		</div>
 		<div class="container">
-			<div class="contact">
+			<div class="contact"  class="shortlinks" >
 				<h2>تواصل معنا</h2>
 				<a target="_blank" href="#">instagram <i class="fa-brands fa-instagram"></i></a>
 				<a target="_blank" href="#">facebook <i class="fa-brands fa-facebook"></i></a>
 				<a target="_blank" href="#">youtube <i class="fa-brands fa-youtube"></i></a>
 				<a target="_blank" href="#">Gmail <i class="fa-solid fa-envelope"></i></a>
 			</div>
-			<div class="shortlinks">
+			<div class="shortlinks" >
 				<h2>روابط مختصرة</h2>
 				<a href="#praytime">مواقيت الصلاة</a>
 				<a href="#adkar">أدعية و أذكار</a>
@@ -1882,7 +1884,14 @@
 		<div class="finich">&copy;<span>وَذَكَرَ</span> جميع الحقوق محفوظة 2022</div>
 	</footer>
 	<!-- End Footer -->
-
+    <!-- Anmation Js File Aos -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+        duration:3000,
+		offset:650,
+		});
+	  </script>
 	<!-- JavaScript -->
 	<script src="javascript/script.js"></script>
 </body>
